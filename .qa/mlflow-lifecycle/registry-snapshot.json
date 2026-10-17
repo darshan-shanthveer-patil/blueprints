@@ -1,0 +1,208 @@
+{
+  "candidate": {
+    "run": {
+      "info": {
+        "run_uuid": "a00678af634e4d2488769a4bcd35b492",
+        "experiment_id": "2",
+        "run_name": "55DdRDM5eRz2e11YiKCMeE-candidate",
+        "user_id": "unknown",
+        "status": "FINISHED",
+        "start_time": 1792279351724,
+        "end_time": 1792279354687,
+        "artifact_uri": "mlflow-artifacts:/2/a00678af634e4d2488769a4bcd35b492/artifacts",
+        "lifecycle_stage": "active",
+        "run_id": "a00678af634e4d2488769a4bcd35b492"
+      },
+      "data": {
+        "metrics": [
+          {
+            "key": "accuracy",
+            "value": 0.9555555555555556,
+            "timestamp": 1792279354662,
+            "step": 0
+          },
+          {
+            "key": "p95_latency_ms",
+            "value": 1.0882222000000001,
+            "timestamp": 1792279354662,
+            "step": 0
+          },
+          {
+            "key": "peak_rss_mib",
+            "value": 275.62890625,
+            "timestamp": 1792279354662,
+            "step": 0
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.runName",
+            "value": "55DdRDM5eRz2e11YiKCMeE-candidate"
+          },
+          {
+            "key": "kestra.execution_id",
+            "value": "55DdRDM5eRz2e11YiKCMeE"
+          },
+          {
+            "key": "evaluation.model_name",
+            "value": "cpu-lifecycle-demo"
+          },
+          {
+            "key": "evaluation.model_version",
+            "value": "2"
+          },
+          {
+            "key": "evaluation.dataset_digest",
+            "value": "145515be518a3f20694fbb5849b60a7cba084db9f7da8cba2a1ff77a74f9001f"
+          },
+          {
+            "key": "evaluation.hardware_id",
+            "value": "95d3314fb78c-x86_64-102421b1572e4ec83525d2a54ae2ceed454ff31ad67012a72a85d1fbbaa7e03d-affinity:0,1,2,3,4,5,6,7,8"
+          },
+          {
+            "key": "evaluation.batch_size",
+            "value": "16"
+          },
+          {
+            "key": "evaluation.benchmark_protocol",
+            "value": "{\"features\": [\"sepal length (cm)\", \"sepal width (cm)\", \"petal length (cm)\", \"petal width (cm)\"], \"iterations\": 300, \"method\": \"pyfunc-predict-v1\", \"mlflow\": \"3.17.1\", \"numpy\": \"2.5.4\", \"pandas\": \"3.0.6\", \"python\": \"3.12.14\", \"rss\": \"linux-process-peak-mib\", \"sklearn\": \"1.9.1\", \"target_column\": \"target\", \"threads\": 1, \"warmup\": 50}"
+          },
+          {
+            "key": "evaluation.device",
+            "value": "cpu"
+          },
+          {
+            "key": "evaluation.model_sha256",
+            "value": "143ebb8141d31ed86a751dea49a8494a9f999d1d6ea9b3e4a5d027785ca26d40"
+          },
+          {
+            "key": "evaluation.predictions_sha256",
+            "value": "06df7ab78f20b9a07979fce989eabfcfb8e692ae91d24cad39a99687aac0be97"
+          }
+        ]
+      },
+      "inputs": {},
+      "outputs": {}
+    }
+  },
+  "candidate_version": {
+    "model_version": {
+      "name": "cpu-lifecycle-demo",
+      "version": "2",
+      "creation_timestamp": 1792279241572,
+      "last_updated_timestamp": 1792279241572,
+      "current_stage": "None",
+      "description": "",
+      "source": "models:/m-974da3f09b134dc7ae1d1218752ddfeb",
+      "run_id": "59bd67ea14ff45a4a350673294391eba",
+      "status": "READY",
+      "run_link": "",
+      "aliases": [
+        "candidate"
+      ]
+    }
+  },
+  "champion": {
+    "run": {
+      "info": {
+        "run_uuid": "6ae27461186f46f7bb62ab1063b5af5f",
+        "experiment_id": "2",
+        "run_name": "55DdRDM5eRz2e11YiKCMeE-champion",
+        "user_id": "unknown",
+        "status": "FINISHED",
+        "start_time": 1792279348635,
+        "end_time": 1792279351701,
+        "artifact_uri": "mlflow-artifacts:/2/6ae27461186f46f7bb62ab1063b5af5f/artifacts",
+        "lifecycle_stage": "active",
+        "run_id": "6ae27461186f46f7bb62ab1063b5af5f"
+      },
+      "data": {
+        "metrics": [
+          {
+            "key": "accuracy",
+            "value": 0.9333333333333333,
+            "timestamp": 1792279351672,
+            "step": 0
+          },
+          {
+            "key": "p95_latency_ms",
+            "value": 1.6085104000000001,
+            "timestamp": 1792279351672,
+            "step": 0
+          },
+          {
+            "key": "peak_rss_mib",
+            "value": 276.140625,
+            "timestamp": 1792279351672,
+            "step": 0
+          }
+        ],
+        "tags": [
+          {
+            "key": "mlflow.runName",
+            "value": "55DdRDM5eRz2e11YiKCMeE-champion"
+          },
+          {
+            "key": "kestra.execution_id",
+            "value": "55DdRDM5eRz2e11YiKCMeE"
+          },
+          {
+            "key": "evaluation.model_name",
+            "value": "cpu-lifecycle-demo"
+          },
+          {
+            "key": "evaluation.model_version",
+            "value": "1"
+          },
+          {
+            "key": "evaluation.dataset_digest",
+            "value": "145515be518a3f20694fbb5849b60a7cba084db9f7da8cba2a1ff77a74f9001f"
+          },
+          {
+            "key": "evaluation.hardware_id",
+            "value": "95d3314fb78c-x86_64-102421b1572e4ec83525d2a54ae2ceed454ff31ad67012a72a85d1fbbaa7e03d-affinity:0,1,2,3,4,5,6,7,8"
+          },
+          {
+            "key": "evaluation.batch_size",
+            "value": "16"
+          },
+          {
+            "key": "evaluation.benchmark_protocol",
+            "value": "{\"features\": [\"sepal length (cm)\", \"sepal width (cm)\", \"petal length (cm)\", \"petal width (cm)\"], \"iterations\": 300, \"method\": \"pyfunc-predict-v1\", \"mlflow\": \"3.17.1\", \"numpy\": \"2.5.4\", \"pandas\": \"3.0.6\", \"python\": \"3.12.14\", \"rss\": \"linux-process-peak-mib\", \"sklearn\": \"1.9.1\", \"target_column\": \"target\", \"threads\": 1, \"warmup\": 50}"
+          },
+          {
+            "key": "evaluation.device",
+            "value": "cpu"
+          },
+          {
+            "key": "evaluation.model_sha256",
+            "value": "78d165ea315fe1bd32f28c277d31c76dca626de037c76c2a75973428a82af7aa"
+          },
+          {
+            "key": "evaluation.predictions_sha256",
+            "value": "b4cba9cf522759501aa5e22d9d243400b8fcf342bdd48d9824c29db7e9bf489d"
+          }
+        ]
+      },
+      "inputs": {},
+      "outputs": {}
+    }
+  },
+  "champion_version": {
+    "model_version": {
+      "name": "cpu-lifecycle-demo",
+      "version": "1",
+      "creation_timestamp": 1792279238975,
+      "last_updated_timestamp": 1792279238975,
+      "current_stage": "None",
+      "description": "",
+      "source": "models:/m-e772b827625c430d94f93606f163fbf1",
+      "run_id": "5f6a9edfef324d278236e7fc229f41c6",
+      "status": "READY",
+      "run_link": "",
+      "aliases": [
+        "champion"
+      ]
+    }
+  }
+}

@@ -1,0 +1,180 @@
+[
+  {
+    "case": "dry-run",
+    "id": "8FDwBOCLKCgcO6gLWGwYB",
+    "state": "SUCCESS",
+    "verdict": "ELIGIBLE_FOR_REVIEW",
+    "champion_after": "1",
+    "measurements": {
+      "candidate": {
+        "accuracy": 0.9555555555555556,
+        "p95_latency_ms": 1.37508305,
+        "peak_rss_mib": 274.421875
+      },
+      "champion": {
+        "accuracy": 0.9333333333333333,
+        "p95_latency_ms": 1.4978861,
+        "peak_rss_mib": 276.09765625
+      }
+    }
+  },
+  {
+    "case": "concurrency-rejected",
+    "id": "3gPconMqxy0QUv9Ycuq5ng",
+    "state": "FAILED",
+    "verdict": null,
+    "champion_after": "1"
+  },
+  {
+    "case": "reject-approval",
+    "id": "SNn0XQLtbhaW2RsLQ61Bk",
+    "state": "SUCCESS",
+    "verdict": "APPROVAL_REJECTED",
+    "champion_after": "1",
+    "measurements": {
+      "candidate": {
+        "accuracy": 0.9555555555555556,
+        "p95_latency_ms": 1.3869582000000003,
+        "peak_rss_mib": 274.69140625
+      },
+      "champion": {
+        "accuracy": 0.9333333333333333,
+        "p95_latency_ms": 1.5067773,
+        "peak_rss_mib": 276.296875
+      }
+    }
+  },
+  {
+    "case": "quality-blocked",
+    "id": "4hpE8jwzWgDmNybJQJUUlQ",
+    "state": "SUCCESS",
+    "verdict": "BLOCKED",
+    "champion_after": "1",
+    "measurements": {
+      "candidate": {
+        "accuracy": 0.9555555555555556,
+        "p95_latency_ms": 1.0029656000000002,
+        "peak_rss_mib": 273.79296875
+      },
+      "champion": {
+        "accuracy": 0.9333333333333333,
+        "p95_latency_ms": 1.4272625500000002,
+        "peak_rss_mib": 276.1015625
+      }
+    }
+  },
+  {
+    "case": "latency-blocked",
+    "id": "1GnR2sCE9xKumvAQhitWMB",
+    "state": "SUCCESS",
+    "verdict": "BLOCKED",
+    "champion_after": "1",
+    "measurements": {
+      "candidate": {
+        "accuracy": 0.9555555555555556,
+        "p95_latency_ms": 1.4590187000000003,
+        "peak_rss_mib": 275.16796875
+      },
+      "champion": {
+        "accuracy": 0.9333333333333333,
+        "p95_latency_ms": 1.38104595,
+        "peak_rss_mib": 276.08203125
+      }
+    }
+  },
+  {
+    "case": "memory-blocked",
+    "id": "14VhOijwOIwWWvV7sM5HeU",
+    "state": "SUCCESS",
+    "verdict": "BLOCKED",
+    "champion_after": "1",
+    "measurements": {
+      "candidate": {
+        "accuracy": 0.9555555555555556,
+        "p95_latency_ms": 1.0620174000000002,
+        "peak_rss_mib": 275.1484375
+      },
+      "champion": {
+        "accuracy": 0.9333333333333333,
+        "p95_latency_ms": 1.5915362500000008,
+        "peak_rss_mib": 275.5625
+      }
+    }
+  },
+  {
+    "case": "wrong-report",
+    "id": "2dYIz7KnG840vuPVPrdVd6",
+    "state": "FAILED",
+    "verdict": "CHECK_FAILED",
+    "champion_after": "1",
+    "measurements": {
+      "candidate": {
+        "accuracy": 0.9555555555555556,
+        "p95_latency_ms": 1.3847795,
+        "peak_rss_mib": 274.90234375
+      },
+      "champion": {
+        "accuracy": 0.9333333333333333,
+        "p95_latency_ms": 1.6416528000000006,
+        "peak_rss_mib": 275.2578125
+      }
+    }
+  },
+  {
+    "case": "stale-evidence",
+    "id": "7Yo4U6LgYomfcKQSy1YCGw",
+    "state": "FAILED",
+    "verdict": "CHECK_FAILED",
+    "champion_after": "1",
+    "measurements": {
+      "candidate": {
+        "accuracy": 0.9555555555555556,
+        "p95_latency_ms": 1.3367142,
+        "peak_rss_mib": 274.671875
+      },
+      "champion": {
+        "accuracy": 0.9333333333333333,
+        "p95_latency_ms": 1.9329880000000006,
+        "peak_rss_mib": 275.58203125
+      }
+    }
+  },
+  {
+    "case": "stale-alias",
+    "id": "7lSLwUWNTc5iyTqTsYDHAw",
+    "state": "FAILED",
+    "verdict": "CHECK_FAILED",
+    "champion_after": "1",
+    "measurements": {
+      "candidate": {
+        "accuracy": 0.9555555555555556,
+        "p95_latency_ms": 0.9880347,
+        "peak_rss_mib": 275.28515625
+      },
+      "champion": {
+        "accuracy": 0.9333333333333333,
+        "p95_latency_ms": 1.6812256000000008,
+        "peak_rss_mib": 275.76953125
+      }
+    }
+  },
+  {
+    "case": "approved-promotion",
+    "id": "37toHWMC7svLBDQfnRYVd7",
+    "state": "SUCCESS",
+    "verdict": "PROMOTED",
+    "champion_after": "2",
+    "measurements": {
+      "candidate": {
+        "accuracy": 0.9555555555555556,
+        "p95_latency_ms": 1.2092650999999999,
+        "peak_rss_mib": 274.890625
+      },
+      "champion": {
+        "accuracy": 0.9333333333333333,
+        "p95_latency_ms": 1.2270257500000001,
+        "peak_rss_mib": 275.90234375
+      }
+    }
+  }
+]

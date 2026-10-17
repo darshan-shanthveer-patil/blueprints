@@ -1,0 +1,116 @@
+{
+  "schema_version": 3,
+  "execution_id": "37toHWMC7svLBDQfnRYVd7",
+  "verdict": "ELIGIBLE_FOR_REVIEW",
+  "eligible": true,
+  "approval_required": true,
+  "pinned": {
+    "model_name": "cpu-lifecycle-demo",
+    "candidate": {
+      "version": "2",
+      "source": "models:/m-a7792c77c7884914ac1f5f001c54713f",
+      "training_run_id": "eb8b88a8944f4a9b9cfdd31add2ce588",
+      "run_id": "7507b636252143bab49b6a020aceffbe",
+      "model_sha256": "21188cfa083497eed74b68f6102e4d1c2a3a362063c6e0713241634cfd4086a3",
+      "predictions_sha256": "06df7ab78f20b9a07979fce989eabfcfb8e692ae91d24cad39a99687aac0be97",
+      "evidence_sha256": "650173b2de8a7660798d884c41bc2c7f2a62b732e8b4e7601e3095989a3116e9"
+    },
+    "champion": {
+      "version": "1",
+      "source": "models:/m-dad02852e7354e9eac0f41e59e109572",
+      "training_run_id": "51c66706043843929162806fecf1f685",
+      "run_id": "654466a98cd3463bbb4c36d338302099",
+      "model_sha256": "fd92c80869afcfbabdcf12835dd160ea344837ed22a50e142fadbfcb1684e535",
+      "predictions_sha256": "b4cba9cf522759501aa5e22d9d243400b8fcf342bdd48d9824c29db7e9bf489d",
+      "evidence_sha256": "27b1c451ba6e86db10f69c844c229d1325a57fbe878c9243b10d37d7962e96c7"
+    }
+  },
+  "measurements": {
+    "candidate": {
+      "accuracy": 0.9555555555555556,
+      "p95_latency_ms": 1.2092650999999999,
+      "peak_rss_mib": 274.890625
+    },
+    "champion": {
+      "accuracy": 0.9333333333333333,
+      "p95_latency_ms": 1.2270257500000001,
+      "peak_rss_mib": 275.90234375
+    }
+  },
+  "benchmark_contracts": {
+    "candidate": {
+      "dataset_digest": "145515be518a3f20694fbb5849b60a7cba084db9f7da8cba2a1ff77a74f9001f",
+      "hardware_id": "95d3314fb78c-x86_64-102421b1572e4ec83525d2a54ae2ceed454ff31ad67012a72a85d1fbbaa7e03d-affinity:0,1,2,3,4,5,6,7,8",
+      "batch_size": "16",
+      "benchmark_protocol": "{\"features\": [\"sepal length (cm)\", \"sepal width (cm)\", \"petal length (cm)\", \"petal width (cm)\"], \"iterations\": 300, \"method\": \"pyfunc-predict-v1\", \"mlflow\": \"3.17.1\", \"numpy\": \"2.5.4\", \"pandas\": \"3.0.6\", \"python\": \"3.12.14\", \"rss\": \"linux-process-peak-mib\", \"sklearn\": \"1.9.1\", \"target_column\": \"target\", \"threads\": 1, \"warmup\": 50}",
+      "device": "cpu"
+    },
+    "champion": {
+      "dataset_digest": "145515be518a3f20694fbb5849b60a7cba084db9f7da8cba2a1ff77a74f9001f",
+      "hardware_id": "95d3314fb78c-x86_64-102421b1572e4ec83525d2a54ae2ceed454ff31ad67012a72a85d1fbbaa7e03d-affinity:0,1,2,3,4,5,6,7,8",
+      "batch_size": "16",
+      "benchmark_protocol": "{\"features\": [\"sepal length (cm)\", \"sepal width (cm)\", \"petal length (cm)\", \"petal width (cm)\"], \"iterations\": 300, \"method\": \"pyfunc-predict-v1\", \"mlflow\": \"3.17.1\", \"numpy\": \"2.5.4\", \"pandas\": \"3.0.6\", \"python\": \"3.12.14\", \"rss\": \"linux-process-peak-mib\", \"sklearn\": \"1.9.1\", \"target_column\": \"target\", \"threads\": 1, \"warmup\": 50}",
+      "device": "cpu"
+    }
+  },
+  "thresholds": {
+    "min_accuracy": 0.9,
+    "max_accuracy_drop": 0.01,
+    "max_p95_latency_ms": 100.0,
+    "max_peak_rss_mib": 512.0,
+    "max_resource_increase": 0.1
+  },
+  "reasons": [],
+  "comparable": true,
+  "gates": [
+    {
+      "name": "Accuracy floor",
+      "metric": "accuracy",
+      "operator": ">=",
+      "observed": 0.9555555555555556,
+      "bound": 0.9,
+      "passed": true
+    },
+    {
+      "name": "Accuracy regression",
+      "metric": "accuracy",
+      "operator": ">=",
+      "observed": 0.9555555555555556,
+      "bound": 0.9233333333333333,
+      "passed": true
+    },
+    {
+      "name": "p95 latency ceiling",
+      "metric": "p95_latency_ms",
+      "operator": "<=",
+      "observed": 1.2092650999999999,
+      "bound": 100.0,
+      "passed": true
+    },
+    {
+      "name": "Peak RSS ceiling",
+      "metric": "peak_rss_mib",
+      "operator": "<=",
+      "observed": 274.890625,
+      "bound": 512.0,
+      "passed": true
+    },
+    {
+      "name": "p95 latency regression",
+      "metric": "p95_latency_ms",
+      "operator": "<=",
+      "observed": 1.2092650999999999,
+      "bound": 1.3497283250000003,
+      "passed": true
+    },
+    {
+      "name": "Peak RSS regression",
+      "metric": "peak_rss_mib",
+      "operator": "<=",
+      "observed": 274.890625,
+      "bound": 303.492578125,
+      "passed": true
+    }
+  ],
+  "checked_at": "2026-10-17T23:30:13.821724+00:00"
+}

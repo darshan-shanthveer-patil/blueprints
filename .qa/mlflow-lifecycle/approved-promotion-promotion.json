@@ -1,0 +1,13 @@
+{
+  "execution_id": "37toHWMC7svLBDQfnRYVd7",
+  "model_name": "cpu-lifecycle-demo",
+  "alias": "champion",
+  "previous_version": "1",
+  "requested_version": "2",
+  "report_sha256": "974735b2d411dee69c9fd947144e23a8688e2a22f7817b073d2041fcbd7e35ea",
+  "approval_reason": "Public-data integration-test approval",
+  "promoted": true,
+  "verdict": "PROMOTED",
+  "rollback_instruction": "Inspect the live alias first. Restore previous_version only under exclusive writer access.",
+  "verified_at": "2026-10-17T23:30:16.487828+00:00"
+}
